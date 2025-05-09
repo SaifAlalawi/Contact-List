@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact List</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -23,7 +24,8 @@
       border-radius: 16px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       max-width: 600px;
-      width: 90%;
+      width: 100%;
+      margin: 20px;
     }
 
     h2 {
@@ -31,6 +33,7 @@
       color: #2c3e50;
       margin-bottom: 30px;
       font-weight: 600;
+      font-size: 24px;
     }
 
     .contact {
@@ -61,6 +64,24 @@
 
     .linkedin a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .name {
+        font-size: 16px;
+      }
+
+      .email, .linkedin {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
